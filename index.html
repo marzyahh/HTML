@@ -1,0 +1,80 @@
+<!-- Yes, I was a programmer in a big project, really big
+but I don't know what difference is between margin and padding
+such as a...
+ -->
+
+<!--so this difference is that: padding coming with border or a background or any box, with out those we have margin
+then margin is for outside of a some box and border is for content of a box 
+ok, I try for some way and I check them in browser console
+so the important note is that browser set default margin and padding so we should ignore them by set zero for them in anywhere
+actually I can see default margin in console but not yet for padding-->
+
+<html>
+
+<head>
+    <title>It's my first good practice</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        h1 {
+            border: 2px solid;
+            padding: 30px;
+            margin: 20px;
+        }
+        
+        p {
+            padding: 20px;
+            /* we don't have any margin cause we set 0 as a default, yes if we don't set, then we see a margin default: there was 16. */
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>This is a important heading</h1>
+    <p>This is a paragraph</p>
+    <p>it's another paragraph</p>
+    <div>
+        <h3>It's a heading</h3>
+    </div>
+
+    <!-- in a tag we have a target attribute that had four value: self, blank, parent and top
+    URL dive to two part: 1) relative URL(local path) and 2)absolute URL(copy link in somewhere)
+we can use a text or an image that can use for linked to out path
+and if u want by click on a text and send an email for someone we should use email inside href attribute
+we can also use a button as a link(need some JS information-->
+    <a href="https://www.w3schools.com/html/html_links_bookmarks.asp">Click there</a><br>
+    <a href="https://www.w3schools.com/html/html_links_bookmarks.asp"><img src="smiley.gif"></a><br>
+    <a href="mailto: marzyahhosseini74@gmail.com">Send Email to </a><br><br><br>
+    <!--some times you want create a bookmark, oooh how we can have a book mark? so book mark means that goes somewhere by a click
+    so we need an attribute called id(somewhere that we want go) and link to this id(set for from where we want go)-->
+    <h2 id="CHAPTER1">Chapter 1</h2><br>
+    <p>This is chapter one</p>
+    <h2>Chapter 2</h2><br>
+    <p>This is chapter two</p>
+    <h2>Chapter 3</h2><br>
+    <p>This is chapter three</p>
+    <h2>Chapter 4</h2><br>
+    <p>This is chapter four</p>
+    <h2 id="CHAPTER5">Chapter 5</h2><br>
+    <p>This is chapter five</p>
+    <h2>Chapter 6</h2><br>
+    <p>This is chapter six</p>
+    <h2>Chapter 7</h2><br>
+    <p>This is chapter seven</p>
+    <h2>Chapter 8</h2><br>
+    <p>This is chapter eight</p>
+    <h2>Chapter 9</h2><br>
+    <p>This is chapter nine</p>
+    <h2>Chapter 10</h2><br>
+    <p>This is chapter ten</p><br>
+    <a href="#CHAPTER1">Jump to Chapter First</a><br>
+    <a href="#CHAPTER5">Jump to Chapter five</a><br>
+
+    <!--oops!, I learned something about image in html, I'll document them soon as soon-->
+</body>
+
+</html>
